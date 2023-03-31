@@ -41,7 +41,8 @@ const config: HardhatUserConfig = {
       url: zkSyncTestEndpoint,
       ethNetwork: goerliEndpoint,
       accounts: [`0x${zkSyncTestPrivateKey}`],
-      zksync: true
+      zksync: true,
+      verifyURL: 'https://zksync2-testnet-explorer.zksync.dev/contract_verification'
     },
     zkSync: {
       url: zkSyncEndpoint,

@@ -9,7 +9,7 @@ dotenv.config();
 
 const deployFunc = async (hre: HardhatRuntimeEnvironment) => {
   // Initialize the wallet.
-  const wallet = new Wallet(process.env.ZK_SYNC_TEST_PRIVATE_KEY as string);
+  const wallet = new Wallet(process.env.ZK_SYNC_PRIVATE_KEY as string);
 
   // Create deployer object and load the artifact of the contract we want to deploy.
   const deployer = new Deployer(hre, wallet);
